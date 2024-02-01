@@ -1,0 +1,3 @@
+@baseUrl = http://localhost:8080
+### Get all Texts
+GET {{baseUrl}}/texts

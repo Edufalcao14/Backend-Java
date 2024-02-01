@@ -1,0 +1,29 @@
+@baseUrl = http://localhost:8080
+
+### Get ALL films
+GET {{baseUrl}}/films
+Content-Type: */*
+
+### Create One film
+POST {{baseUrl}}/films
+Content-Type: application/json
+
+{
+  "title" : "Venom: Let There Be Carnage",
+  "duration" : 97,
+  "budget" : 110,
+  "link" : "https://en.wikipedia.org/wiki/Venom:_Let_There_Be_Carnage"
+}
+### Delete film with id in parameter
+DELETE {{baseUrl}}/films/4
+
+### Update One film
+PUT {{baseUrl}}/films/2
+Content-Type: application/json
+
+{
+  "title" : "Venom: Let There Be Carnage",
+  "duration" : 97,
+  "budget" : 110,
+  "link" : "https://en.wikipedia.org/wiki/Venom:_Let_There_Be_Carnage"
+}
